@@ -196,22 +196,3 @@ Ready for integration with:
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## 📄 License
-
-© Copyrights 2025, Dvara Solutions. All Rights Reserved.
-
-## 🏢 About Dvara Solutions
-
-Dvara Solutions is the developer of Munify, India's first national municipal database and funding platform. The platform brings together municipal commissioners and funders to enable transparent financing of municipal projects across India.
-
-## 📞 Support
-
-For support and inquiries:
-- Email: info@munify.in
-- Phone: +91 98765 43210
-- Location: Mumbai, India
-
----
-
-Built with ❤️ by Dvara Solutions
