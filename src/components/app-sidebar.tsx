@@ -1,5 +1,5 @@
 import * as React from "react"
-import { LayoutDashboard, FolderKanban, FileText, Settings, Wrench, GalleryVerticalEnd, Map, PieChart, Search } from "lucide-react"
+import { LayoutDashboard, FolderKanban, Building2, Settings, Wrench, GalleryVerticalEnd, Map, PieChart } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
 import { NavProjects } from "@/components/nav-projects"
@@ -12,7 +12,6 @@ import {
   SidebarHeader,
   SidebarRail,
 } from "@/components/ui/sidebar"
-import { Button } from "@/components/ui/button"
 import { SearchForm } from "./search-form"
 
 // This is sample data.
@@ -42,53 +41,59 @@ const data = {
   navMain: [
     {
       title: "Dashboard",
-      url: "/",
+      url: "/main",
       icon: LayoutDashboard,
       items: [
-        { title: "Overview", url: "/" },
+        { title: "Overview", url: "/main" },
       ],
     },
     {
       title: "Projects",
-      url: "/projects",
+      url: "/main/projects",
       icon: FolderKanban,
       items: [
-        { title: "All Projects", url: "/projects" },
-        { title: "Active", url: "/projects/active" },
-        { title: "Archived", url: "/projects/archived" },
+        { title: "Live Projects", url: "/main/projects/live" },
+        { title: "Funded Projects", url: "/main/projects/funded" },
+        { title: "My Projects", url: "/main/projects/my" },
+        { title: "Favorites", url: "/main/projects/favorites" },
       ],
     },
     {
-      title: "Docs",
-      url: "/settings",
-      icon: FileText,
+      title: "Municipal",
+      url: "/main/municipal",
+      icon: Building2,
       items: [
-        { title: "Settings", url: "/settings" },
+        { title: "All Municipalities", url: "/main/municipal" },
+        { title: "Credit Ratings", url: "/main/municipal/ratings" },
+        { title: "Financial Analysis", url: "/main/municipal/analysis" },
       ],
     },
     {
-      title: "Settings",
-      url: "/settings",
+      title: "Admin",
+      url: "/main/admin",
       icon: Settings,
       items: [
-        { title: "General", url: "/settings" },
+        { title: "Project Management", url: "/main/admin/projects" },
+        { title: "User Management", url: "/main/admin/users" },
+        { title: "Notifications", url: "/main/admin/notifications" },
+        { title: "Reports", url: "/main/admin/reports" },
       ],
     },
   ],
   projects: [
     {
       name: "Design Engineering",
-      url: "/projects",
+      url: "/main/projects",
       icon: Wrench,
     },
     {
       name: "Sales & Marketing",
-      url: "/projects/active",
+      url: "/main/projects/active",
       icon: PieChart,
     },
     {
       name: "Travel",
-      url: "/projects/archived",
+      url: "/main/projects/archived",
       icon: Map,
     },
   ],
